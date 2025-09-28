@@ -13,7 +13,11 @@ body {
 }
 
 .header__avatar {
-  border-radius: 50%;
+  border-radius: 30%;                       /* Оставляем круглую форму */
+  display: block;                           /* Нужно для применения "auto" марджинов */
+  margin: 0 auto;                           /* Авто-отступы по бокам */
+  max-width: 100%;                          /* Масштабируемость */
+  height: auto;                             /* Поддерживаем соотношение сторон */
 }
 
 .header__title {
@@ -28,18 +32,19 @@ body {
   font-size: 16px;
   line-height: 1.4;
   margin: 0;
+  text-align: center;
 }
 
 .links {
-  width: 320px;
-  margin-bottom: 40px;
+  width: 360px;
+  margin-bottom: 40аpx;
 }
 
 .links__header {
   font-family: "Helvetica Neue";
   font-size: 24px;
   line-height: 1.4;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
 }
 
 .links__container {
@@ -55,7 +60,7 @@ body {
   order: 1;
   flex-grow: 0;
   box-sizing: border-box;
-  margin: 0;
+  margin: 15;
 }
 
 .links__link,
@@ -71,7 +76,7 @@ body {
   padding: 0px 0px 10px;
   gap: 30px;
   border-bottom: 1px solid #dadada;
-  width: 280px;
+  width: 320px;
 }
 
 .links__link:last-child {
